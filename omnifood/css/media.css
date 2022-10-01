@@ -1,0 +1,196 @@
+@media (max-width: 950px) {
+  html {
+    font-size: 75%;
+  }
+  .footer__contact, .footer__logo {
+    order: 1;
+  }
+  #footer__grid {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    justify-items: start;
+    gap: 2.5rem;
+  }
+  .hero .fa-bars {
+    display: block !important;
+  }
+  .hero .showcase {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .hero .showcase__content-wrapper {
+    text-align: center;
+  }
+  .hero .showcase__testimonial {
+    justify-content: center;
+  }
+  .hero .showcase__img-wrapper {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .hero .showcase__btn-wrapper {
+    justify-content: center;
+  }
+  .hero .showcase .showcase__img {
+    width: 100%;
+  }
+  .hero__nav {
+    display: none;
+  }
+  .hero__nav .logo {
+    margin-bottom: 0.6rem;
+  }
+  .hero__nav ul {
+    display: none !important;
+  }
+  .mobile-nav {
+    display: block !important;
+  }
+  .testimonials__content-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .testimonials .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  .testimonial__gallary-wrapper {
+    grid-template-columns: repeat(6, minmax(auto, 1fr));
+    gap: 1rem;
+  }
+  .pricing .btn--accent {
+    font-size: 1.125rem;
+  }
+  .why-us {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 950px) and (max-width: 700px) {
+  .meals__content {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+  .meals .diet-card {
+    grid-column: 1/-1;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .first-meal__content {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+  }
+  .bg-img {
+    grid-column: 1 !important;
+    order: -1;
+    height: 35rem !important;
+  }
+  .input__content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .input-wrapper .btn--dark {
+    font-size: 1.5rem;
+    padding: 1em 1.5em;
+  }
+  .input-wrapper select {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 62.5%;
+  }
+  .showcase__testimonial {
+    flex-wrap: wrap;
+  }
+  .hero .item:first-child::before,
+.hero .item:nth-child(3):hover::before,
+.hero .item:last-child:hover::before {
+    font-size: 5rem;
+  }
+  .how-it-works header {
+    text-align: center;
+  }
+  .how-it-works header h2 {
+    font-size: 2rem;
+  }
+  .how-it-works header__desc {
+    font-size: 1.125rem;
+  }
+  .how-it-works__img-wrapper {
+    justify-self: center;
+    order: 0 !important;
+  }
+  .how-it-works__content-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .meals__content {
+    grid-template-columns: 1fr;
+  }
+  .meals .diet-card {
+    grid-column: 1;
+    margin: 0;
+  }
+  .meals .diet-card__title {
+    margin-bottom: 1rem;
+  }
+  .testimonials__content-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .testimonials .content-wrapper {
+    display: block;
+  }
+  .testimonials__content {
+    grid-template-columns: 1fr;
+  }
+  .testimonial__gallary-wrapper {
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    gap: 1rem;
+  }
+  .testimonial__card {
+    margin-bottom: 2.5rem;
+  }
+  .testimonial__card:nth-child(even) {
+    margin: 0;
+  }
+  .pricing__content-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .pricing__title {
+    font-size: 2rem !important;
+  }
+  .pricing__desc, .pricing__info {
+    font-size: 1.2rem !important;
+  }
+  .pricing__card {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .pricing__card::after {
+    font-size: 0.9rem !important;
+    padding: 0.8rem 5rem !important;
+  }
+  .why-us {
+    grid-template-columns: 1fr;
+  }
+  .footer__contact, .footer__logo {
+    order: 0;
+  }
+  #footer__grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2.5rem;
+  }
+  .sponsors__img-wrapper {
+    flex-direction: column;
+  }
+  .sponsors__img-wrapper img {
+    width: 50%;
+    margin-bottom: 2.25rem;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

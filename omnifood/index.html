@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/main.css" media="all">
+	<title>Omnifood</title>
+</head>
+<body>
+	<header class="hero">
+		<div class="mobile-nav sidebar" id="sidebar">
+			<input id="toggle" type="checkbox" name="">
+			<label class="bar" for="toggle"> <i class="fas fa-bars"></i></label>
+			<nav class="nav">
+				<ul class="list" id="toggleNav">
+					<li class="item" data-text="How it works"><a href="#how-it-works">How it works</a></li>
+					<li class="item" data-text="Meals"><a href="#meals">Meals</a></li>
+					<li class="item" data-text="Testimonials"><a href="#testimonials">Testimonials</a></li>
+					<li class="item" data-text="Pricing"><a href="#pricing">Pricing</a></li>
+					<li class="item" data-text="Try for free"><a class="btn btn--accent" href="#try-for-free">Try for free</a></li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="hero__nav p-3">
+			<a class="logo-link" href="#"><img class="logo" src="https://mujtaba-one.netlify.app//img/omnifood-logo.png" alt=""></a>
+			<ul class="nav__list">
+				<li class="nav__item"><a class="link" href="#how-it-works">How it works</a></li>
+				<li class="nav__item"><a class="link" href="#meals">Meals</a></li>
+				<li class="nav__item"><a class="link" href="#testimonials">Testimonials</a></li>
+				<li class="nav__item"><a class="link" href="#pricing">Pricing</a></li>
+				<li class="nav__item"><a class="link btn btn--accent" href="#try-for-free" >Try for free</a></li>
+			</ul>
+		</nav>
+
+		<div class="showcase grid grid--1x2 container">
+			<div class="showcase__content-wrapper py-3">
+				<div class="showcase__content flow-content--m">
+					<h1 class="showcase__title"> A healthy meal delivered to your door, every single day </h1>
+					<p class="showcase__desc"> The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year! </p>
+					<div class="showcase__btn-wrapper">
+						<a class="btn btn--accent" href="#try-for-free">Start eating well</a>
+						<a class="btn btn--light" href="#how-it-works">Learning more <i class="fa-solid fa-arrow-down"></i></a>
+					</div>
+				</div>
+
+				<div class="showcase__testimonial">
+					<div class="showcase__testimonial-img-wrapper">
+						<div class="showcase__testimonial-img-wrapper">
+							<img class="showcase__testimonial-img" src="https://mujtaba-one.netlify.app/img/customers/customer-1.jpg" alt="">
+							<img class="showcase__testimonial-img" src="https://mujtaba-one.netlify.app/img/customers/customer-2.jpg" alt="">
+							<img class="showcase__testimonial-img" src="https://mujtaba-one.netlify.app/img/customers/customer-3.jpg" alt="">
+							<img class="showcase__testimonial-img" src="https://mujtaba-one.netlify.app/img/customers/customer-4.jpg" alt="">
+							<img class="showcase__testimonial-img" src="https://mujtaba-one.netlify.app/img/customers/customer-5.jpg" alt="">
+							<img class="showcase__testimonial-img" src="https://mujtaba-one.netlify.app/img/customers/customer-6.jpg" alt="">
+						</div>
+					</div>
+					<p class="showcase__testimonial-desc"> <span class="special-word">250,000+ </span>meals delivered last year! </p>
+				</div>
+			</div>
+
+			<div class="showcase__img-wrapper">
+				<img class="showcase__img" src="https://mujtaba-one.netlify.app/img/hero-min.png" alt=""></div>
+			</div>
+	</header>
+
+	<section class="sponsors p-3 container">
+		<h2 class="sponsors__title">As featured in</h2>
+		<div class="sponsors__img-wrapper">
+			<img class="sponsors__img" src="https://mujtaba-one.netlify.app/img/logos/techcrunch.png" alt="">
+			<img class="sponsors__img" src="https://mujtaba-one.netlify.app/img/logos/business-insider.png" alt="">
+			<img class="sponsors__img" src="https://mujtaba-one.netlify.app/img/logos/the-new-york-times.png" alt="">
+			<img class="sponsors__img" src="https://mujtaba-one.netlify.app/img/logos/forbes.png" alt="">
+			<img class="sponsors__img" src="https://mujtaba-one.netlify.app/img/logos/usa-today.png" alt="">
+		</div>
+	</section>
+
+	<section class="how-it-works py-3 container flow-content--xl" id="how-it-works">
+		<header class="how-it-works__header p-2">
+			<h2 class="how-it-works__title"> Your daily dose of health in 3 simple steps </h2>
+			<p class="how-it-works__desc"><span class="special-word">How it works</span></p>
+		</header>
+
+		<div class="how-it-works__content-wrapper grid grid--1x2 flow-content--xl">
+			<div class="how-it-works__content">
+				<p class="how-it-works__counter">01</p>
+				<h3 class="how-it-works__content-title"> Tell us what you like (and what not) </h3>
+				<p class="how-it-works__desc"> Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow! </p>
+			</div>
+			<div class="how-it-works__img-wrapper">
+				<img class="how-it-works__img" src="https://mujtaba-one.netlify.app/img/app/app-screen-1.png" al-t="">
+			</div>
+		</div>
+
+		<div class="how-it-works__content-wrapper grid grid--1x2">
+			<div class="how-it-works__content">
+				<p class="how-it-works__counter">02</p>
+				<h3 class="how-it-works__content-title">  Approve your weekly meal plan </h3>
+				<p class="how-it-works__desc"> Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes. </p>
+			</div>
+			<div class="how-it-works__img-wrapper how-it-works__img-wrp">
+				<img class="how-it-works__img" src="https://mujtaba-one.netlify.app/img/app/app-screen-2.png" alt="">
+			</div>
+		</div>
+
+		<div class="how-it-works__content-wrapper grid grid--1x2">
+			<div class="how-it-works__content">
+				<p class="how-it-works__counter">03</p>
+				<h3 class="how-it-works__content-title"> Receive meals at convenient time </h3>
+				<p class="how-it-works__desc"> Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily! </p>
+			</div>
+			<div class="how-it-works__img-wrapper">
+				<img class="how-it-works__img" src="https://mujtaba-one.netlify.app/img/app/app-screen-3.png" al-t="">
+			</div>
+		</div>
+
+	</section>
+
+	<section class="meals" id="meals">
+		<header class="meals__header">
+			<h2 class="meals__title"> Omnifood AI chooses from 5,000+ recipes </h2>
+			<p class="meals__desc"><span class="special-word">Meals</span></p>
+		</header>
+
+		<div class="meals__content-wrapper container">
+			<div class="meals__content p-3 grid grid--1x3 ">
+				<div class="meal__card flow-content">
+					<img class="meal__card-img" src="https://mujtaba-one.netlify.app/img/meals/meal-1.jpg" alt="">
+					<h3 class="meal__card-title">Japanese Gyozas</h3>
+					<p class="card-tag card-tag--dark-green meal__card-desc"> Vegetarian </p>
+					<ul class="meal__card-list flow-content">
+						<li class="meal__card-item">
+							<a class="link" href=""><i class="icon fa-solid fa-fire"></i> <strong>650 </strong>calories</a>
+						</li>
+						<li class="meal__card-item">
+							<a class="link" href=""><i class="icon fa-solid fa-utensils"></i> NutriScore &reg; <strong>74</strong></a>
+						</li>
+						<li class="meal__card-item">
+							<a class="link" href=""><i class="icon fa-regular fa-star"></i> <strong>4.9</strong> rating (537)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="meal__card flow-content">
+					<img class="meal__card-img" src="https://mujtaba-one.netlify.app/img/meals/meal-2.jpg" alt="">
+					<h3 class="meal__card-title">Avocado Salad</h3>
+					<div class="card-tag__wrapper">
+						<p class="meal__card-desc card-tag card-tag--light-green"> Vegan</p>
+						<p class="meal__card-desc card-tag card-tag--gold"> Paleo</p>
+					</div>
+					<ul class="meal__card-list flow-content">
+						<li class="meal__card-item">
+							<a class="link" href=""><i class="icon fa-solid fa-fire"></i> <strong>400 </strong>calories</a>
+						</li>
+						<li class="meal__card-item">
+							<a class="link" href=""><i class="icon fa-solid fa-utensils"></i> NutriScore &reg; <strong>92</strong></a>
+						</li>
+						<li class="meal__card-item">
+							<a class="link" href=""><i class="icon fa-regular fa-star"></i> <strong>4.8 </strong>rating (441)</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="diet-card flow-content">
+					<h3 class="diet-card__title">Works with any diet:</h3>
+					<ul class="diet-card__list flow-content">
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i> Vegetarian</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i>  Vegan</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i>  Pescatarian</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i>  Gluten-free</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i>  Lactose-free</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i> Keto</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i>  Paleo</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i>  Low FODMAP</li>
+						<li class="diet-card__item"><i class="icon fa-solid fa-check"></i>   Kid-friendly</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="meals__btn-wrapper">
+			<a class="btn meals__btn" href="#">See all recipes  →</a>
+		</div>
+	</section>
+
+	<section class="testimonials p-3" id="testimonials">
+
+		<div class="testimonials__content-wrapper grid grid--1x2 py-3 container">
+			<header class="testimonials__header container ">
+				<h2 class="testimonials__title"> Once you try it, you can't go back </h2>
+				<p class="testimonials__desc"><span class="special-word">testimonials</span></p>
+			</header>
+			<div class="testimonials__content grid grid--1x2">
+					<div class="testimonial__card flow-content">
+						<img class="testimonial__img" src="https://mujtaba-one.netlify.app/img/customers/dave.jpg" alt="">
+						<p class="testimonial-desc">	 Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical. </p>
+						<p class="testimonial-author">— Dave Bryson</p>
+					</div>
+					<div class="testimonial__card flow-content">
+						<img class="testimonial__img" src="https://mujtaba-one.netlify.app/img/customers/ben.jpg" alt="">
+						<p class="testimonial-desc">	   The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!  </p>
+						<p class="testimonial-author">— Ben Hadley</p>
+					</div>
+					<div class="testimonial__card flow-content">
+						<img class="testimonial__img" src="https://mujtaba-one.netlify.app/img/customers/steve.jpg" alt="">
+						<p class="testimonial-desc">	 Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now! </p>
+						<p class="testimonial-author">— Steve Miller</p>
+					</div>
+					<div class="testimonial__card flow-content">
+						<img class="testimonial__img" src="https://mujtaba-one.netlify.app/img/customers/hannah.jpg" alt="">
+						<p class="testimonial-desc">	  I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.  </p>
+						<p class="testimonial-author">— Hannah Smith</p>
+					</div>
+			</div>
+
+			<div class="testimonial__gallary-wrapper grid grid--1x3">
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-1.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-2.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-3.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-4.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-5.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-6.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-7.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-8.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-9.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-10.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-11.jpg" alt="">
+				</div>
+				<div class="testimonial-gallary__img-wrapper">
+					<img class="testimonial-gallary__img" src="https://mujtaba-one.netlify.app/img/gallery/gallery-1.jpg" alt="">
+				</div>
+		</div>
+
+	</section>
+
+	<section class="pricing p-3" id="pricing">
+		<header class="pricing__header container">
+			<h2 class="pricing__title"> Eating well without breaking the bank </h2>
+			<p class="pricing__desc"><span class="special-word">Pricing</span></p>
+		</header>
+
+		<div class="pricing__content-wrapper grid grid--1x2 container">
+			<div class="pricing__card flow-content">
+				<header class="pricing__card-header">
+					<h3 class="pricing__card-title"><span class="special-word">starter</span></h3>
+					<p class="pricing__card-price"> <span class="dollar-symbol">$</span> 399</p>
+					<p class="pricing__card-desc">per month. That's just $13 per meal!</p>
+				</header>
+
+				<ul class="pricing__card-list flow-content">
+					<li class="pricing__card-item"><i class="icon fa-solid fa-check"></i> 1 meal per day</li>
+					<li class="pricing__card-item"><i class="icon fa-solid fa-check"></i>  Order from 11am to 9pm</li>
+					<li class="pricing__card-item"><i class="icon fa-solid fa-check"></i>  Delivery is free</li>
+					<li style="visibility: hidden" class="pricing__card-item"><i class="icon fa-solid fa-check"></i>  Delivery is free</li>
+				</ul>
+				<a class="btn btn--accent" href="#">Start eating well</a>
+			</div>
+			<div class="pricing__card flow-content pricing__card-special">
+				<header class="pricing__card-header">
+					<h3 class="pricing__card-title"><span class="special-word">Complete</span></h3>
+					<p class="pricing__card-price"> <span class="dollar-symbol">$</span> 649</p>
+					<p class="pricing__card-desc">per month. That's just $11 per meal!</p>
+				</header>
+
+				<ul class="pricing__card-list flow-content">
+					<li class="pricing__card-item"><i class="icon fa-solid fa-check"></i> <strong>2 meals</strong> per day</li>
+					<li class="pricing__card-item"><i class="icon fa-solid fa-check"></i> Order <strong>24/7</strong></li>
+					<li class="pricing__card-item"><i class="icon fa-solid fa-check"></i> Delivery is free</li>
+					<li class="pricing__card-item"><i class="icon fa-solid fa-check"></i> Get access to latest recipes</li>
+				</ul>
+				<a class="btn btn--accent" href="#">Start eating well</a>
+			</div>
+		</div>
+
+		<p class="pricing__info">Prices include all applicable taxes. You can cancel at any time. Both plans include the following:</p>
+
+
+		<div class="why-us grid grid--1x4 container ">
+			<div class="why-us__card flow-content">
+				<i class="icon fa-solid fa-infinity"></i>
+				<h3 class="why-us__card-title">Never cook again!</h3>
+				<p class="why-us__desc"> Our subscriptions cover 365 days per year, even including major holidays. </p>
+			</div>
+			<div class="why-us__card flow-content">
+				<i class="icon fa-brands fa-nutritionix"></i>
+				<h3 class="why-us__card-title">Local and organic</h3>
+				<p class="why-us__desc">  Our cooks only use local, fresh, and organic products to prepare your meals. </p>
+			</div>
+			<div class="why-us__card flow-content">
+				<i class="icon fa-solid fa-leaf"></i>
+				<h3 class="why-us__card-title">No waste</h3>
+				<p class="why-us__desc"> All our partners only use reusable containers to package all your meals. </p>
+			</div>
+			<div class="why-us__card flow-content">
+				<i class="icon fa-solid fa-pause"></i>
+				<h3 class="why-us__card-title">Pause anytime</h3>
+				<p class="why-us__desc"> Going on vacation? Just pause your subscription, and we refund unused days. </p>
+			</div>
+		</div>
+	</section>
+
+	<section class="first-meal container" id="try-for-free">
+		<div class="first-meal__wrapper">
+			<div class="first-meal__content-wrapper">
+				<div class="first-meal__content grid grid--1x3">
+
+					<form class="first-meal__form p-3" action="">
+						<header class="first-meal__header flow-content">
+							<h1 class="first-meal__title"> Get your first meal for free! </h1>
+							<p class="first-meal__desc"> Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us! </p>
+						</header>
+						<div class="input__content-wrapper grid grid--1x2">
+							<div class="input-wrapper">
+								<label for="name">Full Name</label>
+								<input id="name" type="text" placeholder="John Smith" required>
+							</div>
+							<div class="input-wrapper">
+								<label for="email">Email address</label>
+								<input id="email" type="email" placeholder="me@example.com" required>
+							</div>
+							<div class="input-wrapper">
+								<label for="name"> Where did you hear from us?</label>
+								<select id="" name="" required>
+									<option value="">Please choose one option:</option>
+									<option value="friends-and-family">Friends and family</option>
+									<option value="youtube-video">Youtube video</option>
+									<option value="podcast">Podcast</option>
+									<option value="Facebook-ad">Facebook ad</option>
+									<option value="others">Others</option>
+								</select>
+							</div>
+							<div class="input-wrapper btn-wrapper">
+								<button class="btn btn--dark">Sign up now</button>
+							</div>
+						</div>
+					</form>
+					<div class="bg-img"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer p-3">
+		<div class="footer__content-wrapper grid grid--1x5 container" id="footer__grid">
+			<div class="footer__content flow-content--m footer__logo">
+				<img class="logo" src="https://mujtaba-one.netlify.app/img/omnifood-logo.png" alt="">
+				<ul class="social__list">
+					<li class="social__item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li class="social__item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+					<li class="social__item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+				</ul>
+				<p class="footer__desc">copyright &copy; 2022 by Omnifood, Inc. All rights reserved.</p>
+			</div>
+
+			<div class="footer__content flow-content--m footer__contact">
+				<h3 class="footer__title">Contact us</h3>
+				<ul class="footer__nav flow-content">
+					<li class="footer__item">623 Harrison St., 2nd Floor,<br> San Francisco, CA 94107</li>
+					<li class="footer__item"><a href="#"> 415-201-6370 </a></li>
+					<li class="footer__item"> hello@omnifood.com <li>
+				</ul>
+			</div>
+			<div class="footer__content flow-content--m">
+				<h3 class="footer__title">Account</h3>
+				<ul class="footer__nav flow-content">
+					<li class="footer__item"><a href="#">Create account</a></li>
+					<li class="footer__item"><a href="#">Sign in</a></li>
+					<li class="footer__item"><a href="#">iOS app</a><li>
+					<li class="footer__item"><a href="#">Android app</a><li>
+				</ul>
+			</div>
+			<div class="footer__content flow-content--m">
+				<h3 class="footer__title flow-content">Company</h3>
+				<ul class="footer__nav flow-content">
+					<li class="footer__item"><a href="#">About Omnifood</a></li>
+					<li class="footer__item"><a href="#">For Business</a></li>
+					<li class="footer__item"><a href="#">Cooking partners</a><li>
+					<li class="footer__item"><a href="#">Careers</a><li>
+				</ul>
+			</div>
+			<div class="footer__content flow-content--m">
+				<h3 class="footer__title flow-content flow-co">Resources</h3>
+				<ul class="footer__nav flow-content flow-content">
+					<li class="footer__item"><a href="#">ecipe directory
+					<li class="footer__item"><a href="#">Help center</a></li>
+					<li class="footer__item"><a href="#">Privacy & terms</a><li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		document.getElementById('toggleNav').onclick = function() {
+		document.getElementById('toggle').checked = false;
+};
+	</script>
+</body>
+</html>

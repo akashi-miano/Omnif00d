@@ -1,0 +1,232 @@
+// variables
+
+$accent-clr: #cf711f;
+$light-clr: #fdf2e9;
+$txt-clr: #555;
+$title-clr: #333;
+$num-counter-clr: #ddd;
+$dark-green: #51cf66;
+$light-green: #94d82d;
+$gold: #ffd43b;
+$dark-clr: #45260a;
+
+// resets
+
+html,
+body {
+	overflow-x: hidden
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*:focus  {
+	box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+input, .hero a, .btn {
+	outline: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 6rem;
+}
+body {
+	font-family: "Rubik", sans-serif;
+	color: $txt-clr;
+	line-height: 1.6;
+}
+
+ul {
+	list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+	color: $title-clr;
+	line-height: 1.1;
+}
+
+strong {
+	font-weight: 500;
+}
+
+// utilities
+
+.flow-content--s > * + * {
+	margin-top: .5rem;
+}
+
+.flow-content > * + * {
+	margin-top: 1rem;
+}
+
+.flow-content--m > * + * {
+	margin-top: 1.5rem;
+}
+
+.flow-content--l > * + * {
+	margin-top: 2rem;
+}
+
+.flow-content--xl > * + * {
+	margin-top: 3rem;
+}
+
+.grid {
+	display: grid
+}
+
+.grid--1x2 {
+	grid-template-columns: repeat(2, minmax(auto, 1fr))
+}
+
+.grid--1x3 {
+	grid-template-columns: repeat(3, minmax(auto, 1fr))
+}
+
+.grid--1x4 {
+	grid-template-columns: repeat(4, minmax(auto, 1fr))
+}
+
+.grid--1x5 {
+	grid-template-columns: repeat(5, minmax(auto, 1fr))
+}
+
+.py-1 {
+	padding: 1rem 0;
+}
+
+.py-2 {
+	padding: 2rem 0;
+}
+.py-3 {
+	padding: 3rem 0;
+}
+
+.px-1 {
+	padding: 0 1rem;
+}
+
+.px-2 {
+	padding: 2rem;
+}
+.px-3 {
+	padding: 0 3rem;
+}
+
+
+
+
+.p-1 {
+	padding: 1rem;
+}
+.p-2 {
+	padding: 2rem ;
+}
+.p-3 {
+	padding: 3rem ;
+}
+
+
+%btn {
+	display: inline-block;
+	padding: .6rem 1.2rem;
+	font-size: 1.125rem;
+	border-radius: 9px;
+	font-weight: 600;
+	font-family: inherit;
+	transition: 250ms background;
+	border: 0;
+	cursor: pointer;
+}
+
+.btn {
+	@extend %btn;
+
+	&--accent  {
+		background: $accent-clr;
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			background: darken($accent-clr , 10%);
+		}
+	}
+
+	&--light  {
+		background: #fff;
+		color: $txt-clr;
+
+		&:hover,
+		&:focus  {
+			background: darken($light-clr, 5%);
+		}
+	}
+
+	&--dark  {
+		background: $dark-clr;
+		transition: 250ms ;
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			background: #fff;
+			color: $dark-clr;
+		}
+	}
+}
+
+.special-word {
+	color: $accent-clr;
+	text-transform: uppercase;
+}
+
+.container {
+	max-width: 1250px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 2rem;
+	
+}
+
+%card-tag {
+	border-radius: 2rem;
+	font-size: .8rem;
+	width: fit-content;
+	color: $title-clr;
+	padding: .2em 2em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.card-tag {
+	@extend %card-tag;
+	order: -1;
+}
+
+.card-tag--dark-green {
+	background: $dark-green;
+}
+
+.card-tag--light-green {
+	background: $light-green;
+}
+.card-tag--gold{
+	background: $gold;
+}
+
+.icon {
+	color: $accent-clr;
+	font-size: 1.3rem;
+	margin-right: 1rem;
+}
+

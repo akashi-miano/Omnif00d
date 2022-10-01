@@ -1,0 +1,204 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+input, .hero a, .btn {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  color: #333;
+  line-height: 1.1;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.flow-content--s > * + * {
+  margin-top: 0.5rem;
+}
+
+.flow-content > * + * {
+  margin-top: 1rem;
+}
+
+.flow-content--m > * + * {
+  margin-top: 1.5rem;
+}
+
+.flow-content--l > * + * {
+  margin-top: 2rem;
+}
+
+.flow-content--xl > * + * {
+  margin-top: 3rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--1x2 {
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+.grid--1x3 {
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+}
+
+.grid--1x4 {
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+}
+
+.grid--1x5 {
+  grid-template-columns: repeat(5, minmax(auto, 1fr));
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.125rem;
+  border-radius: 9px;
+  font-weight: 600;
+  font-family: inherit;
+  transition: 250ms background;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn--accent {
+  background: #cf711f;
+  color: #fff;
+}
+.btn--accent:hover, .btn--accent:focus {
+  background: #a35918;
+}
+.btn--light {
+  background: #fff;
+  color: #555;
+}
+.btn--light:hover, .btn--light:focus {
+  background: #fbe4d2;
+}
+.btn--dark {
+  background: #45260a;
+  transition: 250ms;
+  color: #fff;
+}
+.btn--dark:hover, .btn--dark:focus {
+  background: #fff;
+  color: #45260a;
+}
+
+.special-word {
+  color: #cf711f;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1250px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.card-tag {
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  width: fit-content;
+  color: #333;
+  padding: 0.2em 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-tag {
+  order: -1;
+}
+
+.card-tag--dark-green {
+  background: #51cf66;
+}
+
+.card-tag--light-green {
+  background: #94d82d;
+}
+
+.card-tag--gold {
+  background: #ffd43b;
+}
+
+.icon {
+  color: #cf711f;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=config.css.map */

@@ -1,0 +1,352 @@
+// tablet
+
+
+@media (max-width: 950px) {
+
+	//html 
+
+	html  {
+		font-size: 75%;
+	}
+
+
+		// footer
+
+		.footer  {
+
+			&__contact,
+			&__logo  {
+				order: 1;
+			}
+
+		}
+
+		#footer__grid {
+			grid-template-columns: repeat(3, minmax(auto, 1fr));
+			justify-items: start;
+			gap: 2.5rem;
+		}
+	
+	//hero
+	
+	.hero  {
+
+		.fa-bars  {
+			display: block !important;
+		}
+
+		.showcase{
+			grid-template-columns: 1fr;
+			justify-items: center;
+			align-items: center;
+
+			&__content-wrapper  {
+				text-align: center;
+			}
+
+			&__testimonial  {
+				justify-content: center;
+			}
+
+			&__img-wrapper  {
+				margin: 0 auto;
+				width: 85%;
+			}
+			&__btn-wrapper  {
+				justify-content: center;
+			}
+
+			.showcase__img {
+				width: 100%;
+			}
+
+
+		}
+
+		&__nav  {
+
+			.logo  {
+				margin-bottom: .6rem;
+
+			}
+
+			ul  {
+				display: none  !important;
+			}
+
+			display: none;
+		}
+
+	}
+
+		.mobile-nav  {
+			display: block !important;
+		}
+
+
+		// testimonials
+
+		.testimonials  {
+			&__content-wrapper {
+				grid-template-columns: 1fr ;
+			}
+
+			.content-wrapper  {
+				display: grid ;
+				grid-template-columns: 1fr ;
+				gap: 3rem;
+				margin-bottom: 2.5rem;
+			}
+		}
+
+		.testimonial__gallary-wrapper  {
+			  grid-template-columns: repeat(6, minmax(auto, 1fr));
+			  gap: 1rem;
+		  }
+
+	
+	//pricing
+
+
+	.pricing  {
+		.btn--accent  {
+			font-size: 1.125rem;
+		}
+	}
+
+	// why us 
+
+	.why-us  {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	
+	   
+
+
+	
+
+
+
+@media (max-width: 700px) {
+	//meals
+
+	.meals {
+		&__content  {
+			  grid-template-columns: repeat(2, minmax(auto, 1fr));
+		  
+		}
+
+		.diet-card  {
+			  grid-column: 1/-1;
+			    margin: 0 auto;
+			
+		}
+	} 
+}
+
+	
+}
+
+@media (max-width: 600px) {
+	
+	// first meal
+
+
+	.first-meal__content  {
+		grid-template-columns: 1fr;
+		min-height: 100vh;
+	}
+
+	.bg-img  {
+		grid-column: 1 !important;
+		order: -1;
+		height: 35rem !important;
+
+	}
+
+	.input__content-wrapper{
+		grid-template-columns: 1fr;
+		gap: .5rem;
+	}
+
+
+	.input-wrapper  {
+		.btn--dark  {
+			  font-size: 1.5rem;
+			  padding: 1em 1.5em;
+		}
+		select  {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+}
+
+// mobile
+@media (max-width: 550px) {
+	html  {
+		font-size:  62.5%;
+	}
+
+	// 	showcase
+		
+	.showcase {
+		
+		&__testimonial  {
+			flex-wrap: wrap;
+		}
+	}
+
+	// hero
+
+	.hero {
+
+	// mobile nav 
+		
+	.item:first-child::before,
+	.item:nth-child(3):hover::before,
+	.item:last-child:hover::before {
+	font-size: 5rem;
+}
+}
+
+	// how it works
+
+	.how-it-works {
+		header  {
+			text-align: center;
+
+			h2  {
+				font-size: 2rem;
+			}
+
+			&__desc  {
+				font-size: 1.125rem;
+			}
+		}
+
+		&__img-wrapper  {
+			justify-self: center;
+			order: 0 !important;
+		}
+
+		&__content-wrapper  {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			text-align: center;
+		}
+
+	}
+
+	//meals
+
+	.meals {
+		&__content  {
+			  grid-template-columns: 1fr;
+		  
+		}
+
+		.diet-card  {
+			  grid-column: 1;
+			  margin: 0;
+
+			  &__title  {
+			  	margin-bottom: 1rem;
+			  }
+			
+		}
+	} 
+		// testimonials
+
+		.testimonials  {
+			&__content-wrapper {
+				grid-template-columns: 1fr ;
+			}
+			.content-wrapper {
+				display: block;
+			}
+
+			&__content  {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.testimonial__gallary-wrapper  {
+			  grid-template-columns: repeat(4, minmax(auto, 1fr));
+			  gap: 1rem;
+		  }
+
+		  .testimonial__card  {
+		  	margin-bottom: 2.5rem;
+
+			&:nth-child(even)  {
+				margin: 0;
+			}
+		  }
+
+		  // pricing 
+
+			.pricing  {
+				&__content-wrapper  {
+					grid-template-columns: 1fr;
+				}
+
+				&__title  {
+					font-size: 2rem !important;
+				}
+
+				&__desc,
+				&__info {
+					font-size: 1.2rem !important;
+				}
+
+				&__card  {
+					width: fit-content;
+					margin: 0 auto;
+
+					&::after  {
+						font-size: .9rem !important;
+						padding: 0.8rem 5rem !important;
+					}
+				}
+			}
+
+		// why us 
+
+		.why-us  {
+			grid-template-columns: 1fr ;
+		}
+
+		// footer
+
+		.footer  {
+
+			&__contact,
+			&__logo  {
+				order: 0 ;
+			}
+
+		}
+
+		#footer__grid {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			gap: 2.5rem;
+		}
+
+		// sponsors
+
+		.sponsors {
+			&__img-wrapper  {
+				flex-direction: column;
+
+				img  {
+					width: 50%;
+					margin-bottom: 2.25rem
+				}
+			}
+		}
+
+		}
+
